@@ -1,5 +1,6 @@
 /*
-- Method overriding occurs when a subclass provides its own implementation of a method that is already defined in its parent class.
+- Method overriding occurs when a subclass provides its own 
+  implementation of a method that is already defined in its parent class.
 - The overridden method must have:
     Same method name
     Same parameter list
