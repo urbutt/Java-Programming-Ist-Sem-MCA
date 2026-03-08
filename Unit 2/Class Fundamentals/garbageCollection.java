@@ -2,7 +2,7 @@
  which removes objects that are no longer referenced.
  Objects with no references are marked for collection
  Garbage collector (GC) runs periodically (non-deterministic)
- You can suggest GC: System.gc() (but not guaranteed
+ You can suggest GC: System.gc() (but not guaranteed)
 */
 public class garbageCollection {
     @SuppressWarnings("unused")

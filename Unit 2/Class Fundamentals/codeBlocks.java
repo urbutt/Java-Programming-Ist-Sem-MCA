@@ -11,7 +11,7 @@
   Order of Execution:
      1. Static block (once, when class is loaded)
      2. Instance block (per object creation)
-     3. Constructor (per object creation
+     3. Constructor (per object creation)
 */
 
 public class codeBlocks {

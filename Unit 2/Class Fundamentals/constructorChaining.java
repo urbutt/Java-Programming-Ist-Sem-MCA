@@ -1,6 +1,6 @@
 /*
  * Constructor chaining in Java is the process of calling one
- * constructor from another within the same class or from a parent class.
+ * constructor from another within the same class or from a child class.
  * It helps avoid code duplication and makes initialization logic more
  * maintainable.
  * Types of Constructor Chaining :
@@ -20,16 +20,16 @@ public class constructorChaining {
     // constructor 1
     constructorChaining() {
         this("Unknown", 0); // calls constructor 2
-        System.out.println("Default constructor called");
+        System.out.println("1.Default constructor called");
     }
 
-    // constructor 1
+    // constructor 2
     constructorChaining(String name, int age) {
         this(name, age, "Unknown"); // calls constructor 3
-        System.out.println("Constructor with name and age called");
+        System.out.println("2.Constructor with name and age called");
     }
 
-    // constructor 1
+    // constructor 3
     constructorChaining(String name, int age, String course) {
         this.name = name;
         this.age = age;
@@ -51,14 +51,14 @@ public class constructorChaining {
         constructorChaining s3 = new constructorChaining("Umar", 25, "MCA");
         s3.display();
 
-        childClass c=new childClass("Umar",30 );
+        childClass c = new childClass();
         c.display();
     }
 }
 
 class childClass extends constructorChaining {
-    childClass(String name, int age) {
-        super(name, age);
+    childClass() {
+        super("Umar", 30);
         System.out.println("Called parent constructor from child class");
     }
 }

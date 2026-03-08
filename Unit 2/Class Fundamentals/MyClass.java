@@ -24,7 +24,7 @@ public class MyClass {
         System.out.println(name + " is a " + age + " year old " + species + ".");
     }
 
-    // main method which java access first
+    // main method which java accesses first
     public static void main(String[] args) {
         // creating object
         MyClass obj = new MyClass("Waseem", 25); // passes parameters to constructor
